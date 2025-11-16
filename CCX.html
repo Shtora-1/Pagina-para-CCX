@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro de Cómputo Xicotepec</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+    body{background:#f4f4f4;color:#222;}
+    header{background:#002b5b;color:white;padding:15px 0;box-shadow:0 2px 5px rgba(0,0,0,0.3);}    
+    .container{width:90%;max-width:1200px;margin:auto;}
+    nav{float:right;margin-top:10px;}
+    nav a{color:white;margin-left:20px;text-decoration:none;font-weight:bold;}
+    nav a:hover{text-decoration:underline;}
+    .logo{height:70px;}
+
+    .hero{background:url('CCX.jpg') center/cover no-repeat;height:350px;display:flex;align-items:center;justify-content:center;text-align:center;color:white;box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.45);}    
+    .hero h1{font-size:42px;margin-bottom:10px;}
+    .hero p{font-size:20px;}
+    .btn{display:inline-block;background:#1e90ff;color:white;padding:12px 20px;border-radius:6px;text-decoration:none;margin-top:15px;font-weight:bold;}
+
+    section{padding:60px 0;}
+    h2{margin-bottom:18px;font-size:28px;color:#002b5b;}
+    p{margin-bottom:14px;font-size:18px;line-height:1.6;}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px;margin-top:20px;}
+    .card{background:white;border-radius:10px;padding:20px;box-shadow:0 2px 5px rgba(0,0,0,0.2);}    
+    .card h3{margin-bottom:10px;color:#003b7a;}
+
+    footer{background:#002b5b;color:white;text-align:center;padding:20px;margin-top:30px;}
+    ul{margin-left:20px;margin-top:10px;}
+    li{font-size:17px;margin-bottom:6px;}
+    
+    body.dark{background:#111;color:#eee;}
+    header.dark{background:#001a3d;}
+    .dark .card{background:#1a1a1a;color:#eee;}
+    nav a{transition:0.3s;}
+    nav a:hover{transform:scale(1.1);}    
+    .fade-in{opacity:0;transform:translateY(30px);transition:all 0.6s;}    
+    .fade-in.show{opacity:1;transform:translateY(0);}  
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <img src="CCX.jpg" class="logo" alt="Logo CCX">
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre el CCX</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#cursos">Cursos y Talleres</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button id="darkToggle" style="margin-left:20px;padding:8px 12px;background:#1e90ff;border:none;border-radius:5px;color:white;cursor:pointer;">Modo oscuro</button>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div>
+      <h1>Centro de Cómputo Xicotepec</h1>
+      <p>Aprende, crea, desarrolla y obtén nuevas habilidades digitales.</p>
+      <a href="#servicios" class="btn">Ver servicios</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="container">
+    <h2>Sobre el Centro de Cómputo Xicotepec</h2>
+    <p>El CCX es un espacio tipo ciber donde además de renta de computadoras e internet, se imparten clases, cursos y asesorías tecnológicas para personas de todas las edades.</p>
+    <p>Nuestro objetivo es facilitar el acceso a computadoras, software profesional y capacitación en diferentes áreas digitales.</p>
+  </section>
+
+  <section id="servicios" class="container">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card"><h3>Acceso a computadoras</h3><p>Renta por hora con internet de alta velocidad.</p></div>
+      <div class="card"><h3>Paquetería Office</h3><p>Word, Excel, PowerPoint y más.</p></div>
+      <div class="card"><h3>Edición multimedia</h3><p>Audio, video e imágenes.</p></div>
+      <div class="card"><h3>Páginas web</h3><p>Aprende HTML, CSS y programación básica.</p></div>
+      <div class="card"><h3>Diseño gráfico</h3><p>Photoshop, Canva, Illustrator.</p></div>
+      <div class="card"><h3>Modelado</h3><p>AutoCAD y SolidWorks.</p></div>
+      <div class="card"><h3>Mantenimiento técnico</h3><p>Reparación de PC, celulares e impresoras.</p></div>
+      <div class="card"><h3>Seguridad informática</h3><p>Uso seguro de la tecnología y la web.</p></div>
+    </div>
+  </section>
+
+  <section id="cursos" class="container">
+    <h2>Cursos y Talleres</h2>
+    <p>Estos cursos fueron extraídos directamente de tus archivos enviados.</p>
+    <ul>
+      <li>Páginas web</li>
+      <li>Diseño gráfico</li>
+      <li>AutoCAD</li>
+      <li>SolidWorks</li>
+      <li>Seguridad informática</li>
+      <li>Creación de juegos digitales</li>
+      <li>Diplomado infantil</li>
+      <li>Creación de animaciones</li>
+      <li>Redes informáticas</li>
+      <li>Mantenimiento y reparación de PC y celulares</li>
+      <li>Aprende Canva</li>
+      <li>Prezi</li>
+      <li>Correo electrónico</li>
+      <li>Descargar videos y audios</li>
+      <li>Uso de IA</li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="container">
+    <h2>Contacto</h2>
+    <p>Email: centrocomputoxicotepec@example.com</p>
+    <p>Facebook oficial: <a href="https://www.facebook.com/CentrodeComputacionXicotepec?locale=es_LA" target="_blank">Centro de Cómputo Xicotepec</a></p>
+    <p>Dirección: Av. Principal 456, Xicotepec de Juárez</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Centro de Cómputo Xicotepec — Todos los derechos reservados.</p>
+  </footer>
+
+<script>
+ 
+  const toggle=document.getElementById('darkToggle');
+  toggle.addEventListener('click',()=>{
+    document.body.classList.toggle('dark');
+  });
+
+  
+  const elementos=document.querySelectorAll('.fade-in');
+  function mostrar(){
+    elementos.forEach(el=>{
+      const top=el.getBoundingClientRect().top;
+      if(top<window.innerHeight-100){el.classList.add('show');}
+    });
+  }
+  window.addEventListener('scroll',mostrar);
+  mostrar();
+</script>
+</body>
+</html>
